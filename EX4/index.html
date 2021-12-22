@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css"  rel="stylesheet">
     <link href="css/bootstrap.css"  rel="stylesheet">
+    <link href="css/bootstrap.min.css"  rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -18,14 +19,25 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Team</a>
+      <li class="nav-item dropdown">
+        <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Team</a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Vincent</a></li>
+          <li><a class="dropdown-item" href="#">Béatrice</a></li>
+          <li><a class="dropdown-item" href="#">Rosita</a></li>
+        </ul>
       </li>
       <li class="nav-item seco">
         <a class="nav-link disabled">Contact</a>
       </li>
     </ul>
   </secion>
+<!--Error-->
+  <div class="container">
+      <div class="alert alert-danger" role="alert">
+        Une erreur serveur est survenue. Veuillez rafraîchir la page ou rééssayer plus tard.
+      </div>
+  </div>
 <!--main-->
   <div class="container">
         <div class="row mb-4">
@@ -44,9 +56,14 @@
             </div>
 
         </div>
-
+        <div class="container">
+          <div class="row justify-content-md-center  mb-3">
+            <div class="col-md-auto">
+            <button class="btn btn-primary btn-sm" type="button" id="overlay" href="Signup newsletter.html">Signup newsletter</button>
+            </div>
+          </div>
+        </div>
         <div class="row ">
-            
             <div class="col-4">
 
                 <h3>Planification</h3>
